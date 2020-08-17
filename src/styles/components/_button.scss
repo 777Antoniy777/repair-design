@@ -1,0 +1,20 @@
+.button {
+  @include set-button-theme;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s;
+
+  &--yellow {
+    @include set-button-theme($c-white, $c-harvest-gold, $c-black, $c-white, $c-black, rgba($c-white, 0.7), 2px);
+  }
+
+  &--transparent {
+    @include set-button-theme($c-white, transparent, $c-white, $c-black, $c-white, rgba($c-black, 0.7), 2px);
+  }
+
+  &--black {
+    @include set-button-theme($c-white, $c-cod-gray-1, rgba($c-white, 0.7), $c-cod-gray-1, rgba($c-white, 0.5), $c-cod-gray-1);
+  }
+}

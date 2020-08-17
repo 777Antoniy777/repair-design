@@ -1,0 +1,92 @@
+.process {
+  @include set-width($w-process-wrapper-dt, $w-wrapper-dt-2);
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $futuramediumc;
+  color: $c-mine-shaft;
+
+  @media (max-width: $media-tb) {
+    width: 100%;
+    min-height: 509px;
+    padding-right: 0;
+  }
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__list {
+    @include reset-list;
+    counter-reset: list;
+    max-width: 466px;
+    width: 100%;
+    margin-left: auto;
+
+    @media (max-width: $media-tb) {
+      @include reset-margin;
+      min-width: 260px;
+      max-width: 50%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    margin-bottom: 72px;
+    padding-left: 60px;
+
+    &::before {
+      content: counter(list);
+      counter-increment: list;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 42px;
+      height: 42px;
+      font-size: 18px;
+      line-height: 25px;
+      font-family: $yesevaone;
+      color: $c-white;
+      background-color: $c-harvest-gold;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
+    }
+
+    &:nth-child(n+1):nth-child(-n+9)::before {
+      content: counter(decimal-leading-zero) counter(list);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      left: 18px;
+      width: 4px;
+      height: calc(100% - 42px + 72px);
+      background-color: $c-harvest-gold;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+// styles for IE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1024px) {
+  .process {
+    padding-top: 56px;
+  }
+}

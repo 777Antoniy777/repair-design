@@ -1,0 +1,339 @@
+.control {
+  margin-top: -343px;
+  padding-top: 16px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  line-height: 34px;
+  color: $c-mine-shaft;
+
+  @media (max-width: $media-dt) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $media-tb) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 23px;
+    color: $c-white;
+    background-color: $c-cod-gray-2;
+  }
+
+  &__title {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: $yesevaone;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-white;
+
+    @media (max-width: $media-dt) {
+      color: $c-mine-shaft;
+    }
+
+    @media (max-width: $media-tb) {
+      font-size: 22px;
+      line-height: 24px;
+      padding-bottom: 21px;
+      color: $c-white;
+    }
+  }
+
+  &__icon {
+    @include reset-margin;
+    margin-bottom: 32px;
+
+    @media (max-width: $media-tb) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__video-wrapper,
+  &__video {
+    width: 100%;
+  }
+
+  &__video-wrapper {
+    @include set-width($w-video-dt, $w-wrapper-dt-1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 0;
+    margin: 0 auto 63px;
+    padding-top: 34.2%;
+    background-image: url("../assets/video-preview-dt.jpg");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: $media-tb) {
+      width: 100%;
+      min-height: 207px;
+      margin-bottom: 28px;
+      background-image: url("../assets/video-preview-mb.jpg");
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: $c-black;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+
+    @media (max-width: $media-dt) {
+      height: 100%;
+    }
+
+    @media (max-width: $media-tb) {
+      width: inherit;
+      padding-bottom: 0;
+      box-shadow: 0 20px 30px rgba(24, 24, 24, 0.1);
+    }
+  }
+
+  &__video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85px;
+    height: 85px;
+    background-image: url("../assets/svg/play-icon.svg");
+    background-size: 28px 28px;
+    background-position: 55% 50%;
+    background-repeat: no-repeat;
+    background-color: $c-harvest-gold;
+    border: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(227, 184, 115, 0.2);
+
+    @media (max-width: $media-tb) {
+      top: 50%;
+      width: 37px;
+      height: 37px;
+      background-size: 12px 12px;
+    }
+  }
+
+  &__description {
+    position: relative;
+    max-width: 681px;
+    margin: 0 auto;
+    padding-top: 29px;
+    padding-bottom: 92px;
+    text-align: center;
+
+    br {
+      @media (max-width: $media-tb) {
+        display: none;
+      }
+    }
+
+    @media (max-width: $media-tb) {
+      max-width: 485px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 55px;
+      height: 2px;
+      background-color: $c-harvest-gold;
+      border-radius: 30px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 840px;
+    margin: 0 auto;
+
+    @media (max-width: $media-dt) {
+      max-width: 574px;
+    }
+
+    @media (max-width: $media-tb) {
+      flex-direction: column;
+    }
+  }
+
+  &__inputs-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: $media-tb) {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    margin-right: 55px;
+    margin-bottom: 14px;
+
+    @media (max-width: $media-tb) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+
+      @media (max-width: $media-dt) {
+        margin-right: 55px;
+      }
+
+      @media (max-width: $media-tb) {
+        margin-right: 0;
+      }
+    }
+
+    input {
+      background-color: transparent;
+
+      @media (max-width: $media-tb) {
+        height: 28px;
+        padding-bottom: 9px;
+        color: $c-white;
+        border-bottom-color: $c-silver;
+      }
+
+      &::placeholder {
+        @media (max-width: $media-tb) {
+          color: $c-white;
+        }
+      }
+    }
+
+    label {
+      @media (max-width: $media-tb) {
+        color: rgba($c-white, 0.5);
+      }
+    }
+
+    .control__input-label {
+      display: block;
+
+      @media (max-width: $media-tb) {
+        display: none;
+      }
+
+      &--mb {
+        display: none;
+
+        @media (max-width: $media-tb) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__inputs-wrapper .control__input-wrapper:last-child {
+    @media (max-width: $media-tb) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__checkbox-wrapper {
+    order: 1;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 12px;
+    text-align: center;
+
+    @media (max-width: $media-tb) {
+      order: initial;
+      margin-bottom: 59px;
+      text-align: left;
+    }
+
+    input[type="checkbox"] + label {
+      @media (max-width: $media-tb) {
+        color: $c-white;
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 200px;
+    min-height: 51px;
+    margin-bottom: 14px;
+    padding: 12px 10px;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: $futurademic;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+    cursor: pointer;
+
+    @media (max-width: $media-tb) {
+      width: 100%;
+    }
+
+    // hover
+    &:hover,
+    &:focus {
+      color: $c-white;
+      background-color: $c-black;
+
+      @media (max-width: $media-tb) {
+        color: $c-black;
+        background-color: $c-white;
+      }
+    }
+
+    // active
+    &:active {
+      color: $c-white;
+      background-color: rgba($c-black, 0.7);
+
+      @media (max-width: $media-tb) {
+        color: $c-black;
+        background-color: rgba($c-white, 0.7);
+      }
+    }
+  }
+}
+
+// classes for play/pause video
+.video-pause {
+  background-image: none;
+}
+
+.video-show {
+  z-index: 0;
+}
+
+.btn-pause {
+  background-image: url("../assets/svg/pause-icon.svg");
+  background-color: transparent;
+  box-shadow: none;
+}
+
+// styles for FF
+_::-moz-range-track, body:last-child .projects__outer-control-wrapper {
+  align-items: baseline;
+}

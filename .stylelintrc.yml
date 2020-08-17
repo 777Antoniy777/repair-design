@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {"ignore": ["after-comment"]}
+    ]
+  }
+}

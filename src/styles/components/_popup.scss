@@ -1,0 +1,228 @@
+.overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: rgba($c-black, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  animation-name: none;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+
+  @media (max-width: $media-tb) {
+    padding: 10px;
+  }
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 506px;
+  width: 100%;
+  max-height: 100vh;
+  padding: 32px 49px 27px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-white;
+  background-image: url("../assets/lines-popup-bg.png");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: $c-cod-gray-2;
+  overflow-y: auto;
+
+  @media (max-width: $media-tb) {
+    max-width: 340px;
+    padding: 40px 20px 27px 23px;
+    background-image: none;
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    background-image: url("../assets/svg/close-popup-icon.svg");
+    background-position: 56% 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 1.5px solid $c-white;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+    cursor: pointer;
+
+    @media (max-width: $media-tb) {
+      top: 9px;
+      right: 8px;
+      width: 21px;
+      height: 21px;
+    }
+
+    // hover
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    // active
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__title {
+    @include reset-margin;
+    max-width: 362px;
+    width: 100%;
+    padding-bottom: 26px;
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: $yesevaone;
+    text-align: center;
+
+    @media (max-width: $media-tb) {
+      max-width: 100%;
+      padding-bottom: 31px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  &__input-wrapper {
+    width: 100%;
+    margin-bottom: 46px;
+
+    @media (max-width: $media-tb) {
+      margin-bottom: 44px;
+    }
+
+    input {
+      font-family: $futuramediumc;
+      color: $c-white;
+      background-color: transparent;
+      border-bottom: 1px solid rgba($c-white, 0.15);
+
+      @media (max-width: $media-tb) {
+        padding-bottom: 12px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      &::placeholder {
+        color: $c-white;
+
+        @media (max-width: $media-tb) {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 3px;
+
+      @media (max-width: $media-tb) {
+        margin-bottom: 1px;
+      }
+    }
+  }
+
+  &__inputs-wrapper .popup__input-wrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  &__checkbox-wrapper {
+    width: 100%;
+    margin-bottom: 36px;
+    padding-top: 12px;
+    color: $c-white;
+
+    @media (max-width: $media-tb) {
+      margin-bottom: 38px;
+      padding-top: 13px;
+    }
+
+    input[type="checkbox"] + label {
+      color: $c-white;
+    }
+  }
+
+  &__button {
+    width: 213px;
+    min-height: 51px;
+    margin-top: auto;
+    margin-left: auto;
+    padding: 12px 10px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: $futurademic;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
+    cursor: pointer;
+
+    @media (max-width: $media-tb) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+// active classes
+.popup-show {
+  display: flex;
+}
+
+.popup-animation-show {
+  animation-name: popup-show;
+}
+
+.popup-animation-close {
+  animation-name: popup-close;
+}
+
+// animation
+@keyframes popup-show {
+
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes popup-close {
+
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

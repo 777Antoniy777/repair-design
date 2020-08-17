@@ -1,0 +1,172 @@
+.details {
+  min-height: 691px;
+  padding: 28px 0 10px;
+  font-size: 18px;
+  line-height: 25px;
+  color: $c-mine-shaft;
+  background-image: url("../assets/house-bg-dt.png");
+  background-position: 0 -14px;
+  background-repeat: no-repeat;
+
+  @media (max-width: $media-dt) {
+    padding-bottom: 35px;
+  }
+
+  .site-wrapper {
+    @include set-width($w-wrapper-dt-2, $w-layout-dt);
+    display: flex;
+    align-items: center;
+    max-width: $w-wrapper-dt-2;
+    min-height: 670px;
+
+    @media (max-width: $media-tb) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 506px;
+    width: 100%;
+    padding-top: 65px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-left: auto;
+    margin-bottom: 46px;
+    padding: 23px 49px 28px;
+    background-image: url("../assets/lines-details-form-bg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: $c-cod-gray-1;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: $media-tb) {
+      padding-right: 22px;
+      padding-left: 22px;
+    }
+  }
+
+  &__form-title {
+    @include reset-margin;
+    align-self: center;
+    max-width: 290px;
+    padding-bottom: 36px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: $futurademic;
+    color: $c-white;
+    text-align: center;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 44px;
+
+    input {
+      height: 34px;
+      padding-left: 0;
+      color: $c-white;
+      font-family: $futuramediumc;
+      background-color: transparent;
+      border-bottom-color: rgba(255, 255, 255, 0.15);
+
+      &::placeholder {
+        color: $c-white;
+      }
+    }
+
+    label {
+      color: rgba($c-white, 0.5);
+    }
+  }
+
+  &__inputs-wrapper .details__input-wrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  &__checkbox-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 34px;
+    padding-top: 12px;
+    text-align: left;
+
+    input[type="checkbox"] + label {
+      color: $c-white;
+    }
+
+    // checked
+    input[type="checkbox"]:checked + label::before {
+      background-color: $c-harvest-gold;
+    }
+
+    input[type="checkbox"]:checked + label::after {
+      display: block;
+    }
+  }
+
+  &__button {
+    width: 213px;
+    min-height: 51px;
+    margin-left: auto;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: $futurademic;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
+    cursor: pointer;
+  }
+
+  &__form-addition {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    margin: 0;
+    padding-left: 130px;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: $futurademic;
+    color: $c-harvest-gold;
+    text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
+
+    @media (max-width: $media-tb) {
+      @include reset-margin;
+      padding-right: 20px;
+      padding-left: 100px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 33px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-image: url("../assets/svg/pink-icon.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-color: $c-harvest-gold;
+      box-shadow: 0 10px 20px rgba(237, 192, 120, 0.2);
+      transform: translateY(-50%);
+
+      @media (max-width: $media-tb) {
+        left: 15px;
+      }
+    }
+  }
+}

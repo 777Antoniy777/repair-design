@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Repair Design Project</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="Turnkey Repair in the city of Rostov-on-Don">
+    <link href="<%= htmlWebpackPlugin.files.css %>" rel="stylesheet">
+    <link href="<%= require('./fonts/FuturaBookC.woff2') %>" as="font" rel="preload" crossorigin="anonymous">
+    <link href="<%= require('./fonts/FuturaDemiC.woff2') %>" as="font" rel="preload" crossorigin="anonymous">
+    <link href="<%= require('./fonts/FuturaMediumC.woff2') %>" as="font" rel="preload" crossorigin="anonymous">
+    <link href="<%= require('./fonts/YesevaOne-Regular.woff2') %>" as="font" rel="preload" crossorigin="anonymous">
+    <link href="<%= require('./fonts/ProximaNova-Regular.woff2') %>" as="font" rel="preload" crossorigin="anonymous">
+
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+    
+    <script>
+      document.createElement("template");
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="<%= htmlWebpackPlugin.files.js[1] %>" async></script>
+  </head>
+  
+  <body class="main-page">
+    <header class="main-header">
+      <div class="site-wrapper">
+
+        <nav class="main-header__nav nav">
+  
+          <div class="nav__button-wrapper">
+            <div class="nav__logo-wrapper">
+              <a>
+                <img class="nav__logo" src="<%= require('./assets/svg/logo.svg') %>" alt="Logo IC 'Repair Design Project'">
+              </a>
+            </div>
+  
+            <button class="nav__menu-button" type="button" aria-label="Mobile menu"></button>
+          </div>
+
+          <div class="nav__menu-wrapper">
+            <ul class="nav__list">
+  
+              <li class="nav__item">
+                <a>Home</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Projects</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Measurement</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Team</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Reviews</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Contacts</a>
+              </li>
+  
+            </ul>
+  
+            <div class="nav__phone-wrapper">
+              <a class="nav__link-phone" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
+    
+              <a class="nav__button-request button button--yellow" href="#">Request a call</a>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="intro__banner-wrapper">
+        <div class="site-wrapper">
+
+          <div class="intro__contain-wrapper">
+            <h1 class="intro__title">Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
+      
+            <p class="intro__description">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+  
+            <a class="intro__link intro__link--yellow button button--yellow" href="#">Calculate the cost</a>
+  
+            <a class="intro__link button button--transparent" href="#">
+              <span class="intro__link-span">Submit your application</span>
+              <span class="intro__link-span intro__link-span--mb">Application</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="intro__inst-wrapper">
+        <a href="#">Instagram</a>
+      </div>
+
+      <div class="intro__scroll-wrapper">
+        <button class="intro__scroll-button button button--black" type="button">Scroll down</button>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <div class="site-wrapper">
+        
+        <div class="projects__title-wrapper">
+          <h2 class="projects__title">Completed projects</h2>
+        
+          <p class="projects__description">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+        </div>
+  
+        <div class="first-slider">
+          <nav class="projects__nav first-slider__nav">
+            <ul class="projects__nav-list first-slider__nav-list"></ul>
+          </nav>
+    
+          <ul class="projects__list first-slider__outer-list">
+    
+            <li class="projects__item first-slider__outer-item" data-nav="Rostov-on-Don, Admiral">
+              <div class="projects__item-wrapper">
+                <div class="projects__description-wrapper">
+                  <table class="projects__table">
+                    <tbody>
+      
+                      <tr class="projects__header-row">
+                        <th>City:</th>
+                        <th>Apartment area:</th>
+                      </tr>
+      
+                      <tr class="projects__cell-row">
+                        <td>
+                          <span>Rostov-on-Don</span> 
+                          <span>LCD admiral</span>
+                        </td>
+                        <td>81 m2</td>
+                      </tr>
+      
+                      <tr class="projects__header-row">
+                        <th>Repair time:</th>
+                        <th>Repair Cost:</th>
+                      </tr>
+      
+                      <tr class="projects__cell-row">
+                        <td>3.5 months</td>
+                        <td>Upon request</td>
+                      </tr>
+      
+                    </tbody>
+                  </table>
+                </div>
+      
+                <div class="projects__sublist-wrapper first-slider__inner-wrapper">
+    
+                  <div class="projects__inner-control-wrapper first-slider__inner-control-wrapper">
+                    <button class="inner-slider-button inner-slider-button--left disabled-inner-button first-slider__inner-button first-slider__inner-button--left" type="button" aria-label="Previous slide"></button>
+                    <button class="inner-slider-button inner-slider-button--right first-slider__inner-button first-slider__inner-button--right" type="button" aria-label="Next slide"></button>
+                  </div>
+    
+                  <ul class="projects__sublist first-slider__inner-list">
+    
+                    <li class="projects__subitem first-slider__inner-item">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/product-1-dt.jpg') %>" alt="Project 1">
+                      </div>
+                    </li>
+    
+                    <li class="projects__subitem first-slider__inner-item">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/product-2-dt.jpg') %>" alt="Project 1">
+                      </div>
+                    </li>
+    
+                    <li class="projects__subitem first-slider__inner-item">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/repair-1-dt.jpg') %>" alt="Project 1">
+                      </div>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+              </div>
+            </li>
+    
+            <li class="projects__item first-slider__outer-item" data-nav="Sochi Thieves">
+              <div class="projects__item-wrapper">
+                <div class="projects__description-wrapper">
+                  <table class="projects__table">
+                    <tbody>
+      
+                      <tr class="projects__header-row">
+                        <th>City:</th>
+                        <th>Apartment area:</th>
+                      </tr>
+      
+                      <tr class="projects__cell-row">
+                        <td>
+                          <span>Rostov-on-Don</span> 
+                          <span>LCD admiral</span>
+                        </td>
+                        <td>81 m2</td>
+                      </tr>
+      
+                    </tbody>
+                  </table>
+                </div>
+      
+                <div class="projects__sublist-wrapper first-slider__inner-wrapper">
+    
+                  <div class="projects__inner-control-wrapper first-slider__inner-control-wrapper">
+                    <button class="inner-slider-button inner-slider-button--left disabled-inner-button first-slider__inner-button first-slider__inner-button--left" type="button" aria-label="Previous slide"></button>
+                    <button class="inner-slider-button inner-slider-button--right first-slider__inner-button first-slider__inner-button--right" type="button" aria-label="Next slide"></button>
+                  </div>
+    
+                  <ul class="projects__sublist first-slider__inner-list">
+    
+                    <li class="projects__subitem first-slider__inner-item">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/product-1-dt.jpg') %>" alt="Project 2">
+                      </div>
+                    </li>
+    
+                    <li class="projects__subitem first-slider__inner-item">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/product-2-dt.jpg') %>" alt="Project 2">
+                      </div>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+              </div>
+            </li>
+  
+            <li class="projects__item first-slider__outer-item" data-nav="Rostov-on-Don Patriotic">
+              <div class="projects__item-wrapper">
+                <div class="projects__description-wrapper">
+                  <table class="projects__table">
+                    <tbody>
+      
+                      <tr class="projects__header-row">
+                        <th>City:</th>
+                        <th>Apartment area:</th>
+                      </tr>
+      
+                      <tr class="projects__cell-row">
+                        <td>
+                          <span>Rostov-on-Don</span> 
+                          <span>LCD admiral</span>
+                        </td>
+                        <td>81 m2</td>
+                      </tr>
+      
+                    </tbody>
+                  </table>
+                </div>
+      
+                <div class="projects__sublist-wrapper first-slider__inner-wrapper">
+    
+                  <div class="projects__inner-control-wrapper first-slider__inner-control-wrapper">
+                    <button class="inner-slider-button inner-slider-button--left disabled-inner-button first-slider__inner-button first-slider__inner-button--left" type="button" aria-label="Previous slide"></button>
+                    <button class="inner-slider-button inner-slider-button--right first-slider__inner-button first-slider__inner-button--right" type="button" aria-label="Next slide"></button>
+                  </div>
+    
+                  <ul class="projects__sublist first-slider__inner-list">
+    
+                    <li class="projects__subitem first-slider__inner-item">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/repair-3-dt.jpg') %>" alt="Project 3">
+                      </div>
+                    </li>
+    
+                    <li class="projects__subitemfirst-slider__inner-item ">
+                      <div class="projects__image-wrapper">
+                        <img src="<%= require('./assets/product-2-dt.jpg') %>" alt="Project 3">
+                      </div>
+                    </li>
+    
+                  </ul>
+    
+                </div>
+              </div>
+            </li>
+    
+          </ul>
+    
+          <div class="projects__outer-control-wrapper first-slider__outer-control-wrapper">
+            <button class="projects__outer-button projects__outer-button--left disabled-outer-button first-slider__outer-button first-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+    
+            <ul class="projects__control-list first-slider__outer-control-list"></ul>
+    
+            <button class="projects__outer-button projects__outer-button--right first-slider__outer-button first-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="main-page__wrapper">
+
+      <!-- Control -->
+      <section class="control">
+        <div class="site-wrapper">
+          <h2 class="control__title">Online control</h2>
+  
+          <div class="control__icon icon icon--camera"></div>
+  
+          <div class="control__video-wrapper">
+              <video class="control__video" poster="none" muted>
+                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+              </video>
+  
+            <button class="control__video-button" aria-label="Play video"></button>
+          </div>
+  
+          <p class="control__description">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your<br> apartment. You can watch the live broadcast from one of our facilities!<br> Leave a request below and you will receive a link to the broadcast.</p>
+  
+          <form class="control__form" action="#" method="POST">
+            <div class="control__inputs-wrapper">
+              <div class="control__input-wrapper">
+                <label for="control-name">Name</label>
+                <input id="control-name" type="text" name="control-name" placeholder="What is your name:" required>
+              </div>
+              
+              <div class="control__input-wrapper">
+                <label class="control__input-label" for="control-phone">Phone</label>
+                <label class="control__input-label control__input-label--mb" for="control-phone">Number</label>
+                <input id="control-phone" type="tel" name="control-phone" placeholder="Your phone number:" required>
+              </div>
+            </div>
+  
+            <div class="control__checkbox-wrapper">
+              <input id="control-agreement" type="checkbox" name="control-agreement" required>
+              <label for="control-agreement">I agree to the processing of personal data</label>
+            </div>
+  
+            <button class="control__button button button--yellow" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+  
+      <!-- Repair -->
+      <section class="repair">
+        <div class="site-wrapper">
+          <h2 class="repair__title">Types of repair</h2>
+  
+          <div class="repair__icon icon icon--tools"></div>
+  
+          <ul class="repair__list">
+  
+            <li class="repair__item">
+              <article class="repair__type">
+  
+                <div class="repair__image-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                    <img class="repair__image" src="<%= require('./assets/repair-1-dt.jpg') %>" alt="Redecorating">
+                  </picture>
+                </div>
+  
+                <div class="repair__type-wrapper">
+                  <h3 class="repair__subtitle">Redecorating</h3>
+      
+                  <ul class="repair__sublist">
+                    <li class="repair__subitem">Dismantling of old coatings</li>
+                    <li class="repair__subitem">Wallpapering</li>
+                    <li class="repair__subitem">Painting walls and ceilings</li>
+                    <li class="repair__subitem">Laying flooring</li>
+                    <li class="repair__subitem">Replacing plumbing</li>
+                    <li class="repair__subitem">Replacing sockets and switches</li>
+                    <li class="repair__subitem">Replacing doors</li>
+                  </ul>
+      
+                  <span class="repair__price">From 900 rub / m2</span>
+                </div>
+              </article>
+            </li>
+  
+            <li class="repair__item">
+              <article class="repair__type">
+  
+                <div class="repair__image-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                    <img class="repair__image" src="<%= require('./assets/repair-2-dt.jpg') %>" alt="Redecorating">
+                  </picture>
+                </div>
+  
+                <div class="repair__type-wrapper">
+                  <h3 class="repair__subtitle">Overhaul</h3>
+      
+                  <ul class="repair__sublist">
+                    <li class="repair__subitem">Dismantling of old coatings</li>
+                    <li class="repair__subitem">Wallpapering</li>
+                    <li class="repair__subitem">Painting walls and ceilings</li>
+                    <li class="repair__subitem">Laying flooring</li>
+                    <li class="repair__subitem">Replacing plumbing</li>
+                    <li class="repair__subitem">Replacing sockets and switches</li>
+                    <li class="repair__subitem">Replacing doors </li>
+                  </ul>
+      
+                  <span class="repair__price">From 1800 rub / m2</span>
+                </div>
+              </article>
+            </li>
+  
+            <li class="repair__item">
+              <article class="repair__type">
+  
+                <div class="repair__image-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                    <img class="repair__image" src="<%= require('./assets/repair-3-dt.jpg') %>" alt="Redecorating">
+                  </picture>
+                </div>
+  
+                <div class="repair__type-wrapper">
+                  <h3 class="repair__subtitle">Designer Repair</h3>
+      
+                  <ul class="repair__sublist">
+                    <li class="repair__subitem">Dismantling of old coatings</li>
+                    <li class="repair__subitem">Wallpapering</li>
+                    <li class="repair__subitem">Painting walls and ceilings</li>
+                    <li class="repair__subitem">Laying flooring</li>
+                    <li class="repair__subitem">Replacing plumbing</li>
+                    <li class="repair__subitem">Replacing sockets and switches</li>
+                    <li class="repair__subitem">Replacing doors</li>
+                  </ul>
+      
+                  <span class="repair__price">From 4000 rub / m2</span>
+                </div>
+              </article>
+            </li>
+  
+          </ul>
+  
+        </div>
+      </section>
+  
+      <!-- Details -->
+      <section class="details">
+        <div class="site-wrapper">
+          <h2 class="details__title">Our details</h2>
+  
+          <section class="details__process process">
+            <h3 class="process__title">Process of ordering</h3>
+  
+            <ol class="process__list">
+  
+              <li class="process__item">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
+              <li class="process__item">Free metering</li>
+              <li class="process__item">Free consultation</li>
+              <li class="process__item">Get a cost estimate and<br> the timing of your future repairs</li>
+  
+            </ol>
+          </section>
+  
+          <div class="details__form-wrapper">
+            <form class="details__form" action="#" method="POST">
+              <h3 class="details__form-title">Leave a request for free departure of the measurer</h3>
+  
+              <div class="details__inputs-wrapper">
+  
+                <div class="details__input-wrapper">
+                  <label for="details-name">Name</label>
+                  <input id="details-name" type="text" name="details-name" placeholder="What is your name:" required>
+                </div>
+                
+                <div class="details__input-wrapper">
+                  <label for="details-phone">Phone</label>
+                  <input id="details-phone" type="tel" name="details-phone" placeholder="Your phone number:" required>
+                </div>
+  
+                <div class="details__input-wrapper">
+                  <label for="details-email">Email</label>
+                  <input id="details-email" type="email" name="details-email" placeholder="Your email:" required>
+                </div>
+                
+              </div>
+    
+              <div class="details__checkbox-wrapper">
+                <input id="details-agreement" type="checkbox" name="details-agreement" required>
+                <label for="details-agreement">I agree to the processing of personal data</label>
+              </div>
+    
+              <button class="details__button button button--yellow" type="submit">Call the measurer</button>
+            </form>
+  
+            <p class="details__form-addition">Help save 10 - 20% of the cost of materials</p>
+          </div>
+  
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Fantasies -->
+    <section class="fantasies">
+      <div class="fantasies__wrapper">
+        <div class="site-wrapper">
+
+          <div class="second-slider">
+            <div class="fantasies__tab-wrapper">
+              <h2 class="fantasies__title">We realize your wildest fantasies</h2>
+  
+              <ul class="fantasies__list second-slider__nav-list">
+  
+                <li class="fantasies__item fantasies-item-active second-slider__nav-item" data-index="0" data-bg="<%= require('./assets/fantasies-bg-dt.jpg') %>">
+                  <a href="#">American classic</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="1" data-bg="<%= require('./assets/repair-3-dt.jpg') %>">
+                  <a href="#">Empire</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="2" data-bg="<%= require('./assets/fantasies-bg-dt.jpg') %>">
+                  <a href="#">Classical</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="3" data-bg="<%= require('./assets/repair-3-dt.jpg') %>">
+                  <a href="#">Loft</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="4" data-bg="<%= require('./assets/fantasies-bg-dt.jpg') %>">
+                  <a href="#">Minimalism</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="5" data-bg="<%= require('./assets/repair-3-dt.jpg') %>">
+                  <a href="#">Provence</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="6" data-bg="<%= require('./assets/fantasies-bg-dt.jpg') %>">
+                  <a href="#">Romanticism</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="7" data-bg="<%= require('./assets/repair-3-dt.jpg') %>">
+                  <a href="#">Scandinavian style</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="8" data-bg="<%= require('./assets/fantasies-bg-dt.jpg') %>">
+                  <a href="#">Mediterranean style</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="9" data-bg="<%= require('./assets/repair-3-dt.jpg') %>">
+                  <a href="#">High tech</a>
+                </li>
+  
+                <li class="fantasies__item second-slider__nav-item" data-index="10" data-bg="<%= require('./assets/fantasies-bg-dt.jpg') %>">
+                  <a href="#">Eclecticism</a>
+                </li>
+  
+              </ul>
+            </div>
+  
+            <div class="fantasies__slider-wrapper">
+  
+              <div class="fantasies__slide-wrapper fantasies-slide-active second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="American classic">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-2-dt.jpg') %>" alt="American classic">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item ">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-3-dt.jpg') %>" alt="American classic">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-4-dt.jpg') %>" alt="American classic">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-1-dt.jpg') %>" alt="Empire">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-2-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-2-dt.jpg') %>" alt="Empire">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-3-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Empire">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-4-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Empire">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Classical">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-2-dt.jpg') %>" alt="Classical">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-3-dt.jpg') %>" alt="Classical">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-4-dt.jpg') %>" alt="Classical">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-1-dt.jpg') %>" alt="Loft">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-2-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-2-dt.jpg') %>" alt="Loft">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-3-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Loft">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-4-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Loft">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+                
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Minimalism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-2-dt.jpg') %>" alt="Minimalism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-3-dt.jpg') %>" alt="Minimalism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-4-dt.jpg') %>" alt="Minimalism">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-1-dt.jpg') %>" alt="Provence">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-2-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-2-dt.jpg') %>" alt="Provence">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-3-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Provence">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-4-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Provence">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Romanticism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-2-dt.jpg') %>" alt="Romanticism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-3-dt.jpg') %>" alt="Romanticism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-4-dt.jpg') %>" alt="Romanticism">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-1-dt.jpg') %>" alt="Scandinavian style">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-2-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-2-dt.jpg') %>" alt="Scandinavian style">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-3-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Scandinavian style">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-4-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Scandinavian style">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Mediterranean style">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-2-dt.jpg') %>" alt="Mediterranean style">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-3-dt.jpg') %>" alt="Mediterranean style">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-4-dt.jpg') %>" alt="Mediterranean style">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-1-dt.jpg') %>" alt="High tech">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-2-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/product-2-dt.jpg') %>" alt="High tech">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-3-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="High tech">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-4-dt.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="High tech">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+              <div class="fantasies__slide-wrapper second-slider__outer-wrapper">
+                <div class="fantasies__control-wrapper second-slider__outer-control-wrapper">
+                  <button class="inner-slider-button inner-slider-button--left disabled-inner-button second-slider__outer-button second-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+                  <button class="inner-slider-button inner-slider-button--right second-slider__outer-button second-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+                </div>
+    
+                <div class="fantasies__images-wrapper second-slider__outer-list">
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--first second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/fantasies-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-1-dt.jpg') %>" alt="Eclecticism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--second second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-2-dt.jpg') %>" alt="Eclecticism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--third second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-3-dt.jpg') %>" alt="Eclecticism">
+                    </picture>
+                  </div>
+        
+                  <div class="fantasies__image-wrapper fantasies__image-wrapper--forth second-slider__outer-item">
+                    <picture>
+                      <source media="(max-width: 1023px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                      <img srcset="<%= require('./assets/fantasies-4-dt.jpg') %>" alt="Eclecticism">
+                    </picture>
+                  </div>
+        
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Design -->
+    <section class="design">
+      <div class="site-wrapper">
+        <h2 class="design__title">Design project</h2>
+
+        <div class="design__icon icon icon--pencil"></div>
+
+        <p class="design__description">Design project not only helps to make the repair of your apartment more modern,<br> but also significantly reduces the cost of materials and reduces the time of repair work.</p>
+
+        <ul class="design__list">
+
+          <li class="design__item">
+            <article class="design__type">
+
+              <div class="design__image-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= require('./assets/repair-1-mb.jpg') %> 1x">
+                  <img class="design__image" src="<%= require('./assets/design-1-dt.jpg') %>" alt="Mini">
+                </picture>
+              </div>
+
+              <div class="design__type-wrapper">
+                <h3 class="design__subtitle">Mini</h3>
+    
+                <ul class="design__sublist">
+                  <li class="design__subitem">Measurement drawing</li>
+                  <li class="design__subitem">Redevelopment</li>
+                  <li class="design__subitem">Layout of furniture</li>
+                  <li class="design__subitem">Plumbing plan. equipment</li>
+                </ul>
+    
+                <span class="design__price">150 rub / m2</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="design__item">
+            <article class="design__type">
+
+              <div class="design__image-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= require('./assets/repair-2-mb.jpg') %> 1x">
+                  <img class="design__image" src="<%= require('./assets/design-2-dt.jpg') %>" alt="Standard">
+                </picture>
+              </div>
+
+              <div class="design__type-wrapper">
+                <h3 class="design__subtitle">Standard</h3>
+    
+                <ul class="design__sublist">
+                  <li class="design__subitem">Measurement drawing</li>
+                  <li class="design__subitem">Redevelopment</li>
+                  <li class="design__subitem">Layout of furniture</li>
+                  <li class="design__subitem">Plan of ceilings</li>
+                  <li class="design__subitem">Floor Plan</li>
+                  <li class="design__subitem">Electricians plan</li>
+                  <li class="design__subitem">Lighting plan</li>
+                </ul>
+    
+                <span class="design__price">400 rub / m2</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="design__item">
+            <article class="design__type">
+
+              <div class="design__image-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= require('./assets/repair-3-mb.jpg') %> 1x">
+                  <img class="design__image" src="<%= require('./assets/design-3-dt.jpg') %>" alt="Full">
+                </picture>
+              </div>
+
+              <div class="design__type-wrapper">
+                <h3 class="design__subtitle">Full</h3>
+    
+                <ul class="design__sublist">
+                  <li class="design__subitem">Measurement drawing</li>
+                  <li class="design__subitem">Redevelopment</li>
+                  <li class="design__subitem">Layout of furniture</li>
+                  <li class="design__subitem">Plan of ceilings</li>
+                  <li class="design__subitem">Floor Plan</li>
+                  <li class="design__subitem">Electricians plan</li>
+                  <li class="design__subitem design__subitem--dots">Lighting plan<span>...</span></li>
+                  <li class="design__subitem design__subitem--mb">Wall reamers</li>
+                  <li class="design__subitem design__subitem--mb">3D visualization</li>
+                  <li class="design__subitem design__subitem--mb">Bill of materials</li>
+                  <li class="design__subitem design__subitem--mb">Departure for a selection of materials</li>
+                  <li class="design__subitem design__subitem--mb">Furniture selection</li>
+                </ul>
+    
+                <span class="design__price">900 rub / m2</span>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+    
+    <!-- Steps -->
+    <section class="steps">
+      <div class="site-wrapper">
+        
+        <div class="steps__title-wrapper">
+          <h2 class="steps__title">6 steps to the goal</h2>
+        
+          <p class="steps__description">How we are working</p>
+        </div>
+  
+        <div class="first-slider">
+          <nav class="steps__nav first-slider__nav">
+            <ul class="steps__nav-list first-slider__nav-list"></ul>
+          </nav>
+    
+          <ul class="steps__list first-slider__outer-list">
+    
+            <li class="steps__item first-slider__outer-item" data-nav="Departure to &nbsp; room&nbsp;measurements">
+              <div class="steps__item-wrapper">
+                <div class="steps__description-wrapper">
+                  <h3 class="steps__subtitle">Departure for measurements premises</h3>
+
+                  <p class="steps__subdescription">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An<br> appraiser-appraiser leaves to measure the room.</p>
+
+                  <p class="steps__subdescription">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+
+                  <span class="steps__count">1/6</span>
+                </div>
+      
+                <div class="steps__inner-wrapper first-slider__inner-wrapper">
+                  <img src="<%= require('./assets/steps-1-dt.jpg') %>" alt="Departure for measurements premises">
+                </div>
+              </div>
+            </li>
+
+            <li class="steps__item first-slider__outer-item" data-nav="Compilation estimates">
+              <div class="steps__item-wrapper">
+                <div class="steps__description-wrapper">
+                  <h3 class="steps__subtitle">Compilation estimates</h3>
+
+                  <p class="steps__subdescription">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
+
+                  <p class="steps__subdescription">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+
+                  <span class="steps__count">2/6</span>
+                </div>
+      
+                <div class="steps__inner-wrapper first-slider__inner-wrapper">
+                  <img src="<%= require('./assets/steps-1-dt.jpg') %>" alt="Compilation estimates">
+                </div>
+              </div>
+            </li>
+
+            <li class="steps__item first-slider__outer-item" data-nav="Development project&nbsp;design">
+              <div class="steps__item-wrapper">
+                <div class="steps__description-wrapper">
+                  <h3 class="steps__subtitle">Development project design</h3>
+
+                  <p class="steps__subdescription">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
+
+                  <p class="steps__subdescription">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+
+                  <span class="steps__count">3/6</span>
+                </div>
+      
+                <div class="steps__inner-wrapper first-slider__inner-wrapper">
+                  <img src="<%= require('./assets/steps-1-dt.jpg') %>" alt="Development project design">
+                </div>
+              </div>
+            </li>
+
+            <li class="steps__item first-slider__outer-item" data-nav="Purchasing Supplies">
+              <div class="steps__item-wrapper">
+                <div class="steps__description-wrapper">
+                  <h3 class="steps__subtitle">Purchasing Supplies</h3>
+
+                  <p class="steps__subdescription">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
+
+                  <p class="steps__subdescription">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+
+                  <span class="steps__count">4/6</span>
+                </div>
+      
+                <div class="steps__inner-wrapper first-slider__inner-wrapper">
+                  <img src="<%= require('./assets/steps-1-dt.jpg') %>" alt="Development project design">
+                </div>
+              </div>
+            </li>
+
+            <li class="steps__item first-slider__outer-item" data-nav="Repair finishing work">
+              <div class="steps__item-wrapper">
+                <div class="steps__description-wrapper">
+                  <h3 class="steps__subtitle">Repair finishing work</h3>
+
+                  <p class="steps__subdescription">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
+
+                  <p class="steps__subdescription">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+
+                  <span class="steps__count">5/6</span>
+                </div>
+      
+                <div class="steps__inner-wrapper first-slider__inner-wrapper">
+                  <img src="<%= require('./assets/steps-1-dt.jpg') %>" alt="Repair finishing work">
+                </div>
+              </div>
+            </li>
+
+            <li class="steps__item first-slider__outer-item" data-nav="Приемка-сдача работ">
+              <div class="steps__item-wrapper">
+                <div class="steps__description-wrapper">
+                  <h3 class="steps__subtitle">Приемка-сдача работ</h3>
+
+                  <p class="steps__subdescription">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
+
+                  <p class="steps__subdescription">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
+
+                  <span class="steps__count">6/6</span>
+                </div>
+      
+                <div class="steps__inner-wrapper first-slider__inner-wrapper">
+                  <img src="<%= require('./assets/steps-1-dt.jpg') %>" alt="Приемка-сдача работ">
+                </div>
+              </div>
+            </li>
+    
+          </ul>
+    
+          <div class="steps__outer-control-wrapper first-slider__outer-control-wrapper">
+            <button class="steps__outer-button steps__outer-button--left disabled-outer-button first-slider__outer-button first-slider__outer-button--left" type="button" aria-label="Previous slide"></button>
+    
+            <ul class="steps__control-list first-slider__outer-control-list"></ul>
+    
+            <button class="steps__outer-button steps__outer-button--right first-slider__outer-button first-slider__outer-button--right" type="button" aria-label="Next slide"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="site-wrapper">
+
+        <nav class="main-footer__nav nav">
+  
+          <div class="nav__button-wrapper">
+            <div class="nav__logo-wrapper">
+              <a>
+                <img class="nav__logo" src="<%= require('./assets/svg/logo.svg') %>" alt="Logo IC 'Repair Design Project'">
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__menu-wrapper">
+            <ul class="nav__list">
+  
+              <li class="nav__item">
+                <a>Home</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Projects</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Measurement</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Team</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Reviews</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#">Contacts</a>
+              </li>
+  
+            </ul>
+  
+            <div class="nav__phone-wrapper">
+              <a class="nav__link-phone" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
+    
+              <a class="nav__button-request button button--yellow" href="#">Request a call</a>
+            </div>
+          </div>
+
+        </nav>
+
+      </div>
+    </footer>
+
+    <!-- Popup -->
+    <div class="overlay">
+      <div class="popup">
+        <button class="popup__button-close" type="button" aria-label="Close popup"></button>
+
+        <form class="popup__form" action="#" method="POST">
+          <h2 class="popup__title">Leave a request and our manager will contact you shortly</h2>
+
+          <div class="popup__inputs-wrapper">
+            <div class="popup__input-wrapper">
+              <label for="popup-name">Name</label>
+              <input id="popup-name" type="text" name="popup-name" placeholder="What is your name:" required>
+            </div>
+  
+            <div class="popup__input-wrapper">
+              <label for="popup-phone">Number</label>
+              <input id="popup-phone" type="tel" name="popup-phone" placeholder="Your phone number:" required>
+            </div>
+  
+            <div class="popup__input-wrapper">
+              <label for="popup-email">Email</label>
+              <input id="popup-email" type="email" name="popup-email" placeholder="Your email:" required>
+            </div>
+          </div>
+
+          <div class="popup__checkbox-wrapper">
+            <input id="popup-agreement" type="checkbox" name="popup-agreement" required>
+            <label for="popup-agreement">I agree to the processing of personal data</label>
+          </div>
+
+          <button class="popup__button button button--yellow" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Templates -->
+    <template id="slider-nav-item">
+      <li class="nav-item first-slider__nav-item">
+        <button type="button"></button>
+      </li>
+    </template>
+
+    <template id="slider-radio-button">
+      <li class="projects__control-item first-slider__outer-control-item">
+        <button type="button"></button>
+      </li>
+    </template>
+
+    <script src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+input {
+  width: inherit;
+  height: 30px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $c-mine-shaft;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: $c-mine-shaft;
+  }
+}
+
+label {
+  font-size: 15px;
+  line-height: 20px;
+  color: grey1;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  @include visually-hidden;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 27px;
+  padding-right: 4px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-cod-gray-2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $c-harvest-gold;
+    border-radius: 1px;
+    background-color: transparent;
+  }
+
+  &::after {
+    display: none;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid $c-white;
+    background-color: transparent;
+    clip: rect(3px auto auto 9px);
+    transform: rotate(45deg);
+  }
+}
+
+// checked
+input[type="checkbox"]:checked + label::before {
+  background-color: $c-harvest-gold;
+}
+
+input[type="checkbox"]:checked + label::after {
+  display: block;
+}

@@ -1,0 +1,20 @@
+.icon {
+  position: relative;
+  z-index: 1;
+  width: 114px;
+  height: 28px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  &--camera {
+    background-image: url("../assets/svg/camera-icon.svg");
+  }
+
+  &--tools {
+    background-image: url("../assets/svg/tools-icon.svg");
+  }
+
+  &--pencil {
+    background-image: url("../assets/svg/pencil-icon.svg");
+  }
+}

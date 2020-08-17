@@ -1,0 +1,19 @@
+.main-footer {
+  min-height: 133px;
+  background-color: $c-cod-gray-2;
+
+  @media (max-width: $media-tb) {
+    display: none;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+
+    @media (max-width: $media-dt) {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

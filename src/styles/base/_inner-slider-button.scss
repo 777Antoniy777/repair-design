@@ -1,0 +1,78 @@
+.inner-slider-button {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  background-color: $c-harvest-gold;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(227, 184, 115, 0.5);
+  pointer-events: auto;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  // hover
+  &:hover,
+  &:focus {
+    background-color: $c-black;
+  }
+
+  // active
+  &:active {
+    background-color: rgba($c-black, 0.7);
+  }
+
+  @media (max-width: $media-tb) {
+    width: 36px;
+    height: 36px;
+    box-shadow: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 3px solid $c-white;
+    transform: translate(-50%, -50%) rotate(134deg);
+    clip: rect(5px auto auto 5px);
+
+    @media (max-width: $media-tb) {
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      border-width: 2px;
+      clip: rect(3px auto auto 3px);
+    }
+  }
+
+  &--left {
+    &::before {
+      left: 60%;
+      transform: translate(-50%, -50%) rotate(136deg);
+
+      @media (max-width: $media-tb) {
+        left: 59%;
+      }
+    }
+  }
+
+  &--right {
+    &::before {
+      left: 40%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+
+      @media (max-width: $media-tb) {
+        left: 38%;
+      }
+    }
+  }
+}
+
+// active classes
+.disabled-inner-button {
+  visibility: hidden;
+}

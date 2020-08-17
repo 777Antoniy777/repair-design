@@ -1,0 +1,277 @@
+.design {
+  padding-top: 148px;
+  padding-bottom: 30px;
+  font-size: 15px;
+  line-height: 25px;
+  color: $c-mine-shaft;
+
+  @media (max-width: $media-dt) {
+    padding-bottom: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $media-tb) {
+    position: relative;
+    margin-top: -156px;
+    padding-top: 172px;
+    padding-bottom: 70px;
+    font-size: 13px;
+    background-color: $c-cod-gray-2;
+  }
+
+  .site-wrapper {
+    @include set-width($w-wrapper-dt-2, $w-layout-dt);
+    max-width: $w-wrapper-dt-2;
+
+    @media (max-width: $media-tb) {
+      @include set-width($w-wrapper-mb, $w-layout-mb);
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    font-weight: 400;
+    font-family: $yesevaone;
+  }
+
+  &__title {
+    @include reset-margin;
+    position: relative;
+    padding-bottom: 14px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: $yesevaone;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-cod-gray-2;
+
+    @media (max-width: $media-tb) {
+      padding-bottom: 17px;
+      font-size: 22px;
+      line-height: 26px;
+      color: $c-white;
+    }
+  }
+
+  &__icon {
+    @include reset-margin;
+    margin-bottom: 19px;
+  }
+
+  &__description {
+    @include reset-margin;
+    max-width: 763px;
+    width: 100%;
+    padding-bottom: 47px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    @media (max-width: $media-tb) {
+      width: 85%;
+      padding-bottom: 39px;
+      font-size: 15px;
+      line-height: 20px;
+      color: $c-white;
+    }
+  }
+
+  &__type {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__list,
+  &__sublist {
+    @include reset-list;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $media-tb) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @include set-width($w-repair-item-dt, $w-wrapper-dt-2);
+    max-width: 392px;
+    margin-right: $m-repair-item-dt * 100% / $w-wrapper-dt-2;
+    margin-bottom: 40px;
+
+    @media (max-width: $media-tb) {
+      max-width: none;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 79px;
+    }
+
+    &:nth-child(3n),
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      @media (max-width: $media-tb) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    padding-top: 107.5%;
+
+    @media (max-width: $media-tb) {
+      padding-top: 365px;
+    }
+  }
+
+  picture {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__type-wrapper {
+    @include set-width($w-repair-type-wrapper-dt, $w-repair-item-dt);
+    position: relative;
+    z-index: 1;
+    max-width: 330px;
+    margin: -126px auto 0;
+    padding: 22px 0 0;
+    padding-bottom: 0;
+    background-color: $c-white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+    @media (max-width: $media-tb) {
+      @include set-width($w-repair-type-wrapper-mb, $w-repair-item-mb);
+      margin-top: -143px;
+      margin-left: 0;
+      padding-top: 20px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0 34px 5px;
+    font-size: 18px;
+    line-height: 25px;
+
+    @media (max-width: $media-dt) {
+      padding-right: 20px;
+      padding-left: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (max-width: $media-tb) {
+      padding: 0 30px 9px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  &__sublist {
+    margin-bottom: 0;
+    padding: 0 38px;
+
+    @media (max-width: $media-dt) {
+      padding: 0 12px;
+    }
+
+    @media (max-width: $media-tb) {
+      margin-bottom: 8px;
+      padding: 0 20px 0 32px;
+    }
+  }
+
+  &__subitem {
+    position: relative;
+    margin-bottom: 1px;
+    padding-left: 9px;
+    color: $c-dusty-gray;
+
+    &--dots {
+      span {
+        display: none;
+      }
+    }
+
+    @media (max-width: $media-dt) {
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: $media-tb) {
+      margin-bottom: 4px;
+
+      &--mb {
+        display: none;
+      }
+
+      &--dots {
+        span {
+          display: inline;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 228px;
+    min-height: 54px;
+    margin-top: auto;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $yesevaone;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-white;
+    background-color: $c-harvest-gold;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    transform: translateY(50%);
+
+    @media (max-width: $media-dt) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width: $media-tb) {
+      max-width: 190px;
+      min-height: 40px;
+      font-size: 15px;
+    }
+  }
+}

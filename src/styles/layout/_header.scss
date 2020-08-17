@@ -1,0 +1,19 @@
+.main-header {
+  min-height: 83px;
+  background-color: $c-cod-gray-1;
+
+  @media (max-width: $media-tb) {
+    min-height: 57px;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+
+    @media (max-width: $media-dt) {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

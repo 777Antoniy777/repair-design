@@ -1,0 +1,310 @@
+.fantasies {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 1111px;
+  width: 100%;
+  margin-bottom: -39px;
+  padding-bottom: 39px;
+  padding-top: 245px;
+  overflow: hidden;
+
+  @media (max-width: $media-dt) {
+    min-height: 908px;
+    padding-top: 0;
+  }
+
+  @media (max-width: $media-tb) {
+    min-height: 520px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding-top: 134px;
+    padding-bottom: 94px;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: $proximanova;
+    color: $c-white;
+    background-image:
+      linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%),
+      url("../assets/fantasies-bg-dt.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: $c-black;
+
+    @media (max-width: $media-dt) {
+      padding-top: 75px;
+    }
+
+    @media (max-width: $media-tb) {
+      padding-top: 26px;
+      padding-bottom: 35px;
+      font-size: 16px;
+      line-height: 20px;
+      color: $c-black;
+      background-image: none;
+      background-color: $c-white;
+    }
+  }
+
+  .site-wrapper {
+    position: relative;
+    display: flex;
+    max-width: 1234px;
+
+    @media (max-width: $media-dt) {
+      flex-direction: column;
+    }
+  }
+
+  .second-slider {
+    @include set-width($w-fantasies-tab-wrapper-dt, $w-wrapper-dt-2);
+    margin-right: auto;
+
+    @media (max-width: $media-dt) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__slider-wrapper {
+    @media (max-width: $media-tb) {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    width: 350px;
+    margin: 0;
+    padding-bottom: 39px;
+    font-size: 27px;
+    line-height: 37px;
+    font-weight: 400;
+    font-family: $yesevaone;
+    text-transform: uppercase;
+    color: $c-harvest-gold;
+
+    @media (max-width: $media-dt) {
+      margin: 0 auto;
+      padding-bottom: 55px;
+      text-align: center;
+    }
+
+    @media (max-width: $media-tb) {
+      width: 300px;
+      padding-bottom: 30px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+  }
+
+  &__list {
+    @include reset-list;
+
+    @media (max-width: $media-dt) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    @media (max-width: $media-dt) {
+      margin-right: 30px;
+    }
+
+    a {
+      display: inline-block;
+
+      // hover
+      &:hover,
+      &:focus {
+        color: rgba($c-harvest-gold, 0.7);
+      }
+
+      // active
+      &:active {
+        color: rgba($c-harvest-gold, 0.5);
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__slide-wrapper {
+    display: none;
+
+    @media (max-width: $media-dt) {
+      position: relative;
+    }
+  }
+
+  &__control-wrapper {
+    display: none;
+
+    @media (max-width: $media-dt) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      height: 55px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    @media (max-width: $media-tb) {
+      width: 93%;
+      height: 36px;
+    }
+  }
+
+  &__images-wrapper {
+    @include set-width($w-fantasies-images-wrapper-dt, $w-wrapper-dt-2);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1000px;
+    transform: translateY(-45.5%);
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+
+    @media (max-width: $media-dt) {
+      position: static;
+      height: 482px;
+    }
+
+    @media (max-width: $media-tb) {
+      height: 242px;
+    }
+  }
+
+  &__image-wrapper {
+    @include set-width($w-fantasies-image-wrapper-dt, $w-fantasies-images-wrapper-dt);
+    position: relative;
+    max-width: 354px;
+    height: 100%;
+    animation-name: none;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+
+    @media (max-width: $media-dt) {
+      max-width: none;
+    }
+
+    &--first,
+    &--second {
+      margin-right: $m-fantasies-images-wrapper-dt * 100% / $w-fantasies-images-wrapper-dt;
+      transform: translateY(-39px);
+
+      @media (max-width: $media-dt) {
+        margin-right: 0;
+        transform: translateY(0);
+      }
+    }
+
+    &--first,
+    &--third {
+      margin-bottom: 37px;
+
+      @media (max-width: $media-dt) {
+        margin-bottom: 0;
+      }
+    }
+
+    &--third,
+    &--forth {
+      transform: translateY(-112px);
+
+      @media (max-width: $media-dt) {
+        transform: translateY(0);
+      }
+    }
+
+    &--first {
+      max-height: 558px;
+
+      @media (max-width: $media-dt) {
+        max-height: none;
+      }
+    }
+
+    &--second {
+      max-height: 349px;
+
+      @media (max-width: $media-dt) {
+        max-height: none;
+      }
+    }
+
+    &--third {
+      max-height: 275px;
+
+      @media (max-width: $media-dt) {
+        max-height: none;
+      }
+    }
+
+    &--forth {
+      max-height: 625px;
+
+      @media (max-width: $media-dt) {
+        max-height: none;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // active classes
+  .fantasies-item-active {
+    a {
+      color: $c-harvest-gold;
+      border-bottom: 1px solid currentColor;
+      cursor: auto;
+    }
+  }
+
+  .fantasies-slide-active {
+    display: block;
+  }
+}
+
+// animation
+.fantasies-slide-show {
+  animation-name: fantasies-slide-show;
+}
+
+@keyframes fantasies-slide-show {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
